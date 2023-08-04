@@ -1,6 +1,6 @@
 <?php
 
-function selectionSort(array $numbers)
+function selectionSort(array $numbers): array
 {
     $length = count($numbers);
     for ($i = 0; $i < $length - 1; $i++) {
