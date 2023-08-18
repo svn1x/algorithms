@@ -12,9 +12,13 @@ function selectionSort(array $numbers)
             }
         }
 
-        $temp = $numbers[$i];
-        $numbers[$i] = $numbers[$minIndex];
-        $numbers[$minIndex] = $temp;
+        // Old way:
+        // $temp = $numbers[$i];
+        // $numbers[$i] = $numbers[$minIndex];
+        // $numbers[$minIndex] = $temp;
+
+        // New way:
+        [$numbers[$i], $numbers[$minIndex]] = [$numbers[$minIndex], $numbers[$i]];
 
     }
 
